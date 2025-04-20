@@ -29,13 +29,21 @@ End-to-end pipeline: data generation → training → evaluation → inference
 Folder Structure
 
 ├── nested_if_full_c_code.json     # Synthetic dataset
+
 ├── sample_input.c                 # Sample source code (compound ifs)
+
 ├── output.c                       # Transformed code (nested ifs)
+
 ├── codeT5-nested-if/              # Trained model checkpoint
+
 ├── generate_dataset.py            # Code to create synthetic dataset
+
 ├── train_and_evaluate.py          # Fine-tuning pipeline
+
 ├── inference.py                   # Inference script
+
 ├── transform.py                   # File-level C code transformer
+
 └── README.md                      # This file
 
 —
