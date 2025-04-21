@@ -1,17 +1,11 @@
-def transform_c_file(input_path, output_path):
+def transform_c_file(input_path):
     with open(input_path, 'r') as f:
         source_code = f.read()
-
-    transformed_code = convert_compound_ifs_to_nested(source_code)
-
-    with open(output_path, 'w') as f:
-        f.write(transformed_code)
-
-    return transformed_code,source_code
+    return source_code
 
 
 # === Example ===
-source = transform_c_file("sample_input.c", "output.c")
+source = transform_c_file("sample_input.c")
 
 import torch
 from transformers import Trainer, TrainingArguments
